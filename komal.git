@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+     <head>   
+          <title>test javascript</title>
+          <script type="text/javascript">
+
+           var o = { "Hello":"world"};
+
+           alert(o.Hello);
+
+      </script>
+  </head>
+  <body>
+      <h2>JSON Hello world</h2>
+      <p>This is a test program to alert Hello world!</p>
+  </body>
+</html>
