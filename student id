@@ -1,0 +1,104 @@
+input type="number" id="sid" placeholder="Enter Student ID">
+
+<br>
+
+<button onclick="searchStudent()">Search</button>
+
+<div id="result"></div>
+
+</div>
+
+<script>
+
+const students={
+
+141134:{
+name:"chavda komal",
+course:"Junior Software Developer",
+age:20
+},
+
+141335:{
+name:"parmar payal",
+course:"Junior Software Developer",
+age:22
+},
+
+103:{
+name:"chavda komal",
+course:"Junior Software Developer",
+age:21
+},
+
+104:{
+name:"Parmar Nilesh",
+course:"Junior Software Developer",
+age:21
+},
+
+105:{
+name:"Parmar Gopal",
+course:"Junior Software Developer",
+age:20
+},
+
+106:{
+name:"Chavda Jyoti",
+course:"Junior Software Developer",
+age:20
+},
+
+107:{
+name:"Parmar Reena",
+course:"Junior Software Developer",
+age:20
+},
+
+108:{
+name:"Parmar Sejal",
+course:"Junior Software Developer",
+age:20
+},
+
+109:{
+name:"Parmar Lakshmi",
+course:"Junior Software Developer",
+age:20
+}
+
+};
+
+function searchStudent(){
+
+let id=document.getElementById("sid").value;
+
+let s=students[id];
+
+if(s){
+
+document.getElementById("result").innerHTML=
+
+"<h3>Student Details</h3>"+
+
+"<b>ID :</b> "+id+"<br><br>"+
+
+"<b>Name :</b> "+s.name+"<br><br>"+
+
+"<b>Course :</b> "+s.course+"<br><br>"+
+
+"<b>Age :</b> "+s.age;
+
+}
+
+else{
+
+document.getElementById("result").innerHTML="<h3 style='color:red;'>Student Not Found</h3>";
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
